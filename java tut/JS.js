@@ -1,7 +1,7 @@
 
 //Basic Writing------------------ 
-document.write("<b> Sameer  kutta</b><br>");
-document.write("Hey! \"Sameer,How's everything going with you\"");
+document.write("<b> Elvish BHaii</b><br>");
+document.write("Hey! \"hey,How's everything going with you\"");
 document.write("\"Nothing  Much\" :(");
 
 //Function_Making-----------------
@@ -169,13 +169,13 @@ function bgpink(){
 }
 
 //OBJECTS-----------------------
-const huker = {
-    nationality: 'Russian',
+const Booker = {
+    nlity: 'Russ',
     price: 6000,
     color: 'fair',
-    USP: 'Gulambi',}
+    USP: 'Amul',}
 
-document.write(huker)
+document.write(Booker)
 
 
 
