@@ -105,9 +105,6 @@ var obj = {
     abhay: "commander in chief" 
 
 }
-
-document.write(obj)
-
 for (flow in obj){
     document.write("<br>"+flow+" : "+obj[flow]+"<br>");
 }
@@ -116,13 +113,69 @@ for (flow in obj){
 SYNTAX:
 throw expression
 the value of eXpression is used to identify the type of error that occured*/
+try{
+var op = 1;
+while(op<12)
+{
+    if(op == 7) throw "7 is an error"//throw creates user defined errors
+    
+document.write(op+"<BR>");
+op++;
+}}
+catch(error){
+    document.write("<B>{ERROR}</B>:"+error);
+
+}
 
 
 
 
 
+/*TRY-to-CATCH_Statments--------------------------
+SYNTAX:
+try{
+    statment(s) where an exception may be thrown
+}
+catch(errorVariable){
+    statment(s) that handle the exception
+}*/
 
-//TRY-to-CATCH_Statments--------------------------
+function PrimeTest(upi){
+
+    document.write("<BR>Testing "+ upi+":");
+    try{
+        if(upi < 1 || upi > 20) throw "invalid digit<BR>"
+        for(var i=2; i<upi; i++)
+        if(upi% i == 0) throw "it is divisible by "+i+"<BR>"
+        document.write("its an prime number<BR>")
+    }catch(err){
+        document.write(err)
+    }        
+}
+for(i=2;i<=21;++i){
+    PrimeTest(i)
+}
+/* JS_Exercise-------------------------- 
+in this i will create 3 buttons which will change background color*/
+
+function bgred(){
+    document.bgColor="red";
+}
+function bggreen(){
+    document.bgColor="green"
+}
+function bgpink(){
+    document.bgColor="pink"
+}
+
+//OBJECTS-----------------------
+const huker = {
+    nationality: 'Russian',
+    price: 6000,
+    color: 'fair',
+    USP: 'Gulambi',}
+
+document.write(huker)
 
 
 
